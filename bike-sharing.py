@@ -4,8 +4,8 @@ import altair as alt
 
 
 # Load the data
-data_hour = pd.read_csv("data\hour_data.csv")
-data_day = pd.read_csv("data\day_data.csv")
+data_hour = pd.read_csv("data/hour_data.csv")
+data_day = pd.read_csv("data/day_data.csv")
 
 data_hour['dteday'] = pd.to_datetime(data_hour['dteday'])
 data_day['dteday'] = pd.to_datetime(data_day['dteday'])
