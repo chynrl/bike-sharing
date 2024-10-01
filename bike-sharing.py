@@ -2,7 +2,11 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-
+st.set_page_config(
+    page_title="Bike Sharing Dashboard",
+    page_icon="🚲",
+    layout="wide"
+)
 # Load the data
 data_hour = pd.read_csv("data/hour_data.csv")
 data_day = pd.read_csv("data/day_data.csv")
